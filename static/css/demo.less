@@ -1,0 +1,16 @@
+.box-sizing{-webkit-box-sizing:border-box;box-sizing:border-box;}
+.border-radius(@deg1){-webkit-border-radius:@deg1;border-radius:@deg1;}
+.absolute(@top,@right,@bottom,@left){position:absolute; top:@top/375*1rem; right:@right/375*1rem; bottom:@bottom/375*1rem; left:@left/375*1rem; }
+/*padding与margin*/
+.pm(@top1:auto,@right1:auto,@bottom1:auto,@left1:auto){padding:@top1/375*1rem @right1/375*1rem @bottom1/375*1rem @left1/375*1rem;}
+.mp(@top2:auto,@right2:auto,@bottom2:auto,@left2:auto){margin:@top2/375*1rem @right2/3751rem @bottom2/375*1rem @left2/375*1rem;}
+.rgba(@r,@g,@b,@a){background-color:rgba(@r,@g,@b,@a);-webkit-background:rgba(@r,@g,@b,@a);}
+.border-img(@imgsrc,@bw){border-image:url(@imgsrc) @bw;-webkit-border-image:url(@imgsrc) @bw;}
+.background-size(@bgsize-w,@bgsize-h){background-size:@bgsize-w/375*1rem @bgsize-h/375*1rem;-webkit-background-size:@bgsize-w/375*1rem @bgsize-h/375*1rem;}
+.p-r(@name,@px){@{name}:@px/375*1rem;}
+/*箭头*/
+.list_go(@arr_size,@arr_color){display:inline-block; width:@arr_size*1px; height:@arr_size*1px; border-right:1px @arr_color solid; border-bottom:1px @arr_color solid; -webkit-transform:rotate(-45deg); transform:rotate(-45deg);}
+/*边框*/
+.border-bt(@border_color){display:block; width:100%; height:1px; background:@border_color; -webkit-transform:scaleY(0.5);transform:scaleY(0.5)}
+
+.border10{border-bottom:10px #f0f2f5 solid;}

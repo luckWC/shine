@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta content="no" http-equiv="imagetoolbar">
+<meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,width=device-width,user-scalable=no">
+<meta name="format-detection" content="telephone=no,user-scalable=0; " />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<link rel="stylesheet" href="static/css/public.css">
+<style lang="less">
+	.border10{border-bottom:8px #efeff4 solid;}
+	.border05{width:100%; height:1px; background:#e5e5e5; transfrom:scaleY(0.5);}
+	body,html,#app,#app>div{height:100%;}
+	</style>
+<script>
+/*rem值设定*/
+(function(){
+	var dpr,rem,docE1,fontEl;
+	docEl = document.documentElement; 
+	fontEl = document.createElement('style');
+	rem=docEl.clientWidth;
+	docEl.firstElementChild.appendChild(fontEl); 
+	fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+})();
+</script>
+</head>
+<body>
+	<div id="app"></div>
+</body>
+</html>
+
